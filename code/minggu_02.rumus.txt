@@ -1,0 +1,20 @@
+# Blok 1 · minggu_02 · NCG Core Dataset v2.0.0
+=COUNTA(raw!A:A)-1
+
+# Blok 2 · minggu_02 · NCG Core Dataset v2.0.0
+=COUNTIF(A:A, A2)
+
+# Blok 3 · minggu_02 · NCG Core Dataset v2.0.0
+=VLOOKUP(UPPER(TRIM(E2)), map_channel!A:B, 2, FALSE)
+
+# Blok 4 · minggu_02 · NCG Core Dataset v2.0.0
+=ISNUMBER(MATCH(D2, product_master!A:A, 0))
+
+# Blok 5 · minggu_02 · NCG Core Dataset v2.0.0
+=IF(I2="", VLOOKUP(D2, product_master!A:I, 9, FALSE), I2)
+
+# Blok 6 · minggu_02 · NCG Core Dataset v2.0.0
+=AND(H2>=0, H2<=G2)
+
+# Blok 7 · minggu_02 · NCG Core Dataset v2.0.0
+=H2*P2*(1-J2)

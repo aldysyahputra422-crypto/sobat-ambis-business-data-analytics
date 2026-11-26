@@ -1,0 +1,11 @@
+# Blok 1 · minggu_03 · NCG Core Dataset v2.0.0
+=VLOOKUP(D2, product_master!A:C, 3, FALSE)
+
+# Blok 2 · minggu_03 · NCG Core Dataset v2.0.0
+=SUMIFS(clean!H:H, clean!D:D, "SKU-001", clean!S:S, "2025-01")
+
+# Blok 3 · minggu_03 · NCG Core Dataset v2.0.0
+B2:  =SUMIFS(clean!G:G, clean!D:D, A2)          (karton dipesan Q1)
+C2:  =B2/90                                     (Q1 2025 = 90 hari kalender)
+D2:  =SUMIFS(snap!D:D, snap!C:C, A2)            (stok sistem 31 Mar, dari sheet snap yang sudah difilter)
+E2:  =IF(C2=0, "", D2/C2)                       (days of cover)

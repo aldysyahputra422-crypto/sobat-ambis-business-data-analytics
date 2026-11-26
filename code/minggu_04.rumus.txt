@@ -1,0 +1,11 @@
+# Blok 1 · minggu_04 · NCG Core Dataset v2.0.0
+Mean     =AVERAGE(daily!B2:B91)
+Median   =MEDIAN(daily!B2:B91)
+StdDev   =STDEV.S(daily!B2:B91)
+Min      =MIN(daily!B2:B91)
+Max      =MAX(daily!B2:B91)
+Q1       =QUARTILE.INC(daily!B2:B91, 1)
+Q3       =QUARTILE.INC(daily!B2:B91, 3)
+IQR      =Q3 - Q1           (ganti dengan alamat sel Anda)
+Batas atas  =Q3 + 1.5*IQR
+Batas bawah =Q1 - 1.5*IQR

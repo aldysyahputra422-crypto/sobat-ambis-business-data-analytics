@@ -1,0 +1,13 @@
+-- Blok 1 · minggu_11 · NCG Core Dataset v2.0.0
+Calendar = CALENDAR(DATE(2024, 1, 1), DATE(2025, 12, 31))
+
+-- Blok 2 · minggu_11 · NCG Core Dataset v2.0.0
+Ordered Carton = SUM(sales_transactions[quantity_ordered_carton])
+Fulfilled Carton = SUM(sales_transactions[quantity_fulfilled_carton])
+Fill Rate = DIVIDE([Fulfilled Carton], [Ordered Carton])
+Net Sales = SUM(sales_transactions[net_sales_idr])
+Lost Carton = [Ordered Carton] - [Fulfilled Carton]
+
+-- Blok 3 · minggu_11 · NCG Core Dataset v2.0.0
+OTD = AVERAGE(delivery_records[on_time_flag])
+Deliveries = COUNTROWS(delivery_records)

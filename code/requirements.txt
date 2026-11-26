@@ -1,0 +1,9 @@
+# Lingkungan rekomendasi Sobat Ambis Business Data Analytics (Edisi 2.1)
+# Diuji dengan Python 3.12 pada macOS. Lihat matriks kompatibilitas di Ebook Peserta.
+pandas==2.2.3
+numpy==2.0.2
+scikit-learn==1.6.1
+scipy==1.14.1
+matplotlib==3.9.4
+pyparsing==3.2.3  # pyparsing 3.3 memicu peringatan deprecation di matplotlib 3.9.4
+jupyterlab>=4.2

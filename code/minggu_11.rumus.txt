@@ -1,0 +1,3 @@
+# Blok 1 · minggu_11 · NCG Core Dataset v2.0.0
+@Field
+Fill Rate = SUM(quantity_fulfilled_carton) / SUM(quantity_ordered_carton)
